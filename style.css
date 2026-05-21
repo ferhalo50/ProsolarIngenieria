@@ -418,7 +418,7 @@ button:hover{
 
 .contenedor-galeria img{
 
-    width: 130%;
+    width: 100%;
 
     height: 250px;
 
@@ -561,6 +561,8 @@ html{
 
     top: 0;
 
+    left: 0;
+
     width: 100%;
 
     display: flex;
@@ -569,13 +571,13 @@ html{
 
     align-items: center;
 
-    padding: 15px 40px;
-
-    background-color: rgba(0,0,0,0.5);
-
-    backdrop-filter: blur(10px);
+    padding: 20px 50px;
 
     z-index: 1000;
+
+    background-color: rgba(0, 0, 0, 0.596);
+
+    backdrop-filter: blur(5px);
 }
 
 .nav-logo{
@@ -600,9 +602,9 @@ html{
 
 .nav-links a{
 
-    text-decoration: none;
-
     color: white;
+
+    text-decoration: none;
 
     font-weight: bold;
 
@@ -613,48 +615,78 @@ html{
 
     color: #ffd700;
 }
+/* MENU HAMBURGUESA */
 
+.menu-toggle{
+
+    display: none;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    cursor: pointer;
+
+    z-index: 1001;
+
+    transition: 0.3s;
+}
+
+.menu-toggle span{
+
+    width: 32px;
+
+    height: 3px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.menu-toggle:hover span{
+
+    background-color: #ffd700;
+}
 /* RESPONSIVE */
 
 @media (max-width: 768px){
 
     .menu-toggle{
 
-    display: block;
+    display: flex;
+}
+
+.navbar{
+
+    flex-direction: column;
+
+    padding: 15px 20px;
 }
 
 .nav-links{
 
     display: none;
 
+    flex-direction: column;
+
+    gap: 15px;
+
     width: 100%;
 
     text-align: center;
+
+    margin-top: 20px;
+
+    padding: 0;
 }
 
 .nav-links.active{
 
     display: flex;
-}
-
-    .navbar{
-
-        flex-direction: column;
-
-        padding: 15px 20px;
-    }
-
-    .nav-links{
-
-    flex-direction: column;
-
-    gap: 15px;
-
-    margin: 20px 0 0 0;
-
-    padding: 0;
-
-    display: none;
 }
 
     .overlay{
@@ -711,6 +743,21 @@ html{
 
         width: 100%;
     }
+
+.footer-grid{
+
+    flex-direction: column;
+
+    gap: 40px;
+
+    align-items: center;
+}
+
+.footer-columna{
+
+    text-align: center;
+}
+
 }
 
 /* WHATSAPP */
@@ -749,29 +796,120 @@ html{
     pointer-events: auto !important;
 }
 
-/* MENU HAMBURGUESA */
+/* MENU FOOTER */
 
-.menu-toggle{
+.footer{
 
-    display: none;
+    background-color: #020617;
 
-    font-size: 32px;
+    padding: 80px 20px 40px;
+
+    text-align: center;
 
     color: white;
-
-    cursor: pointer;
 }
+
+.footer-contenido{
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.footer-logo{
+
+    width: 130px;
+
+    margin-bottom: 20px;
+}
+
+.footer h3{
+
+    color: #ffd700;
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+}
+
+.footer-texto{
+
+    max-width: 700px;
+
+    margin: auto;
+
+    margin-bottom: 60px;
+
+    color: #d1d5db;
+
+    line-height: 1.7;
+
+    font-size: 18px;
+}
+
+/* GRID */
+
+.footer-grid{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 100px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 50px;
+}
+
+.footer-columna{
+
+    min-width: 220px;
+
+    text-align: left;
+}
+
+.footer-columna h4{
+
+    color: #ffd700;
+
+    margin-bottom: 20px;
+
+    font-size: 24px;
+}
+
+.footer-columna p{
+
+    margin: 12px 0;
+
+    font-size: 17px;
+}
+
+/* LINKS */
 
 .link-red{
 
-    color: #3e8bff;
+    color: #e5e7eb;
 
     text-decoration: none;
 
-    font-weight: bold;
+    transition: 0.3s;
 }
 
 .link-red:hover{
 
     color: #ffd700;
+}
+
+/* COPYRIGHT */
+
+.copyright{
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    padding-top: 25px;
+
+    color: #9ca3af;
+
+    font-size: 14px;
 }

@@ -16,6 +16,7 @@
 />
 
 </head>
+
 <body>
     <nav class="navbar">
 
@@ -23,9 +24,13 @@
         PROSOLAR
     </div>
 
+    <!-- BOTON HAMBURGUESA -->
+
     <div class="menu-toggle" id="menuToggle">
-    ☰
-</div>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
     <ul class="nav-links">
 
@@ -39,6 +44,10 @@
 
         <li>
             <a href="#promocion">Promociones</a>
+        </li>
+
+        <li>
+            <a href="#beneficios">¿Por qué elegirnos?</a>
         </li>
 
         <li>
@@ -98,7 +107,7 @@
 
     <div class="contenedor-servicios">
 
-        <div class="tarjeta" data-aos="fade-up">
+        <div class="tarjeta" data-aos="fade-up" data-aos-delay="100">
 
             <h3>☀️ Instalación</h3>
 
@@ -109,7 +118,7 @@
 
         </div>
 
-        <div class="tarjeta">
+        <div class="tarjeta" data-aos="fade-up" data-aos-delay="200">
 
             <h3>🔧 Mantenimiento</h3>
 
@@ -120,7 +129,7 @@
 
         </div>
 
-        <div class="tarjeta">
+        <div class="tarjeta" data-aos="fade-up" data-aos-delay="300">
 
             <h3>⚡ Trámite CFE</h3>
 
@@ -131,7 +140,7 @@
 
         </div>
 
-        <div class="tarjeta">
+        <div class="tarjeta" data-aos="fade-up" data-aos-delay="400">
 
             <h3>🏠 Sistemas Residenciales</h3>
 
@@ -142,7 +151,7 @@
 
         </div>
 
-        <div class="tarjeta">
+        <div class="tarjeta" data-aos="fade-up" data-aos-delay="500">
 
             <h3>🏢 Sistemas Comerciales</h3>
 
@@ -170,7 +179,7 @@
         </h3>
 
         <p class="precio">
-            Desde $1699 DLLS
+            Desde $1799 DLLS
         </p>
 
         <p class="msi">
@@ -224,13 +233,13 @@
 
     <!-- BENEFICIOS -->
 
-    <section class="beneficios">
+    <section class="beneficios" id="beneficios">
 
     <h2>¿Por qué elegirnos?</h2>
 
     <div class="contenedor-beneficios">
 
-        <div class="beneficio" data-aos="fade-right">
+        <div class="beneficio" data-aos="fade-up" data-aos-delay="100">
 
             <h3>⚡ Alta Eficiencia</h3>
 
@@ -241,7 +250,7 @@
 
         </div>
 
-        <div class="beneficio">
+        <div class="beneficio" data-aos="fade-up" data-aos-delay="200">
 
             <h3>🛠️ Instalación Profesional</h3>
 
@@ -252,7 +261,7 @@
 
         </div>
 
-        <div class="beneficio">
+        <div class="beneficio" data-aos="fade-up" data-aos-delay="300">
 
             <h3>🔒 Garantía</h3>
 
@@ -263,7 +272,7 @@
 
         </div>
 
-        <div class="beneficio">
+        <div class="beneficio" data-aos="fade-up" data-aos-delay="400">
 
             <h3>📍 Atención Local</h3>
 
@@ -330,34 +339,101 @@
 
 </div>
 
-<!-- FOOTER -->
- <footer class="footer" id="contactar">
+<!-- FOOTER --><footer class="footer" id="contactar">
 
     <div class="footer-contenido">
 
-        <img src="logosinfondo.png" alt="Logo Prosolar" class="footer-logo">
+        <!-- LOGO -->
+
+        <img
+            src="logosinfondo.png"
+            alt="Logo Prosolar"
+            class="footer-logo"
+        >
 
         <h3>PROSOLAR Ingeniería</h3>
 
-        <p>
-            Expertos en energía solar y soluciones
-            de ahorro energético en Baja California.
+        <p class="footer-texto">
+            Soluciones profesionales en energía solar
+            para hogares y empresas en Baja California.
         </p>
 
-        <div class="footer-contacto">
+        <!-- COLUMNAS -->
 
-            <p>📱 WhatsApp: <a href="https://wa.me/526641756806" target="_blank" class="link-red">664 175 6806</a></p>
+        <div class="footer-grid">
 
-            <p>📧 Correo: <a href="mailto:prosolar.ing@gmail.com" class="link-red">prosolar.ing@gmail.com</a></p>
+            <!-- SERVICIOS -->
 
-            <p>🌐 Facebook: <a href="https://www.facebook.com/share/1CtyKyYS9x/" target="_blank" class="link-red">Prosolar Ingeniería</a></p>
+            <div class="footer-columna">
 
-            <p>📍 Baja California, México</p>
+                <h4>Servicios</h4>
+
+                <p>☀️ Instalación</p>
+
+                <p>🔧 Mantenimiento</p>
+
+                <p>⚡ Trámite CFE</p>
+
+                <p>🏠 Sistemas Residenciales</p>
+
+            </div>
+
+            <!-- CONTACTO -->
+
+            <div class="footer-columna">
+
+                <h4>Contacto</h4>
+
+                <p>
+                    <a
+                        href="https://wa.me/526641756806"
+                        target="_blank"
+                        class="link-red"
+                    >
+                        📱 WhatsApp
+                    </a>
+                </p>
+
+                <p>
+                    <a
+                        href="mailto:prosolar.ing@gmail.com"
+                        class="link-red"
+                    >
+                        📧 Correo
+                    </a>
+                </p>
+
+                <p>
+                    📍 Baja California
+                </p>
+
+            </div>
+
+            <!-- REDES -->
+
+            <div class="footer-columna">
+
+                <h4>Redes</h4>
+
+                <p>
+                    <a
+                        href="https://www.facebook.com/share/1CtyKyYS9x/"
+                        target="_blank"
+                        class="link-red"
+                    >
+                        🌐 Facebook
+                    </a>
+                </p>
+
+            </div>
 
         </div>
 
+        <!-- COPYRIGHT -->
+
         <p class="copyright">
-            © 2026 PROSOLAR Ingeniería — Todos los derechos reservados
+            © 2026 PROSOLAR Ingeniería —
+            Todos los derechos reservados
         </p>
 
     </div>
@@ -385,5 +461,6 @@
 
     <script src="app.js"></script>
 
+    
 </body>
 </html>
